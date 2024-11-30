@@ -1,0 +1,149 @@
+#root {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #1a1a1a;
+  margin-bottom: 2em;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  padding: 1.2em;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #1a1a1a;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.submit-button {
+  width: 100%;
+  max-width: 800px;
+  margin: 1.5em auto 0;
+  padding: 1.2em;
+  border: none;
+  border-radius: 12px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #2a2a2a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.admin-title {
+  color: #ff0000;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .login-input {
+    padding: 0.8em;
+    font-size: 1em;
+  }
+
+  .submit-button {
+    padding: 0.8em;
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+  }
+
+  .admin-title {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #root {
+    width: 98%;
+    padding: 0.3rem;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+
+  .login-form {
+    max-width: 100%;
+  }
+
+  .login-input {
+    padding: 0.7em;
+  }
+
+  .submit-button {
+    padding: 0.7em;
+  }
+}
