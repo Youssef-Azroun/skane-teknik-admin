@@ -116,7 +116,7 @@ function AddAndDeletePage() {
       { id: 'all', label: 'Alla Produkter' },
       { id: 'surfplata', label: 'Surfplatta' },
       { id: 'mobil telefoner', label: 'Mobil Telefoner' },
-      { id: 'mobil telbihör', label: 'Mobil Tillbehör' },
+      { id: 'mobil tillbehör', label: 'Mobil Tillbehör' },
       { id: 'smart klocka', label: 'Smart Klocka' },
       { id: 'övrig', label: 'Övrig' }
     ];
@@ -339,7 +339,7 @@ function AddAndDeletePage() {
             >
               <option value="">Välj en kategori</option>
               <option value="mobil telefoner">Mobil Telefoner</option>
-              <option value="mobil telbihör">Mobil Tillbehör</option>
+              <option value="mobil tillbehör">Mobil Tillbehör</option>
               <option value="surfplata">Surfplatta</option>
               <option value="smart klocka">Smart Klocka</option>
               <option value="övrig">Övrig</option>
