@@ -5,7 +5,7 @@ import { ref, uploadBytes, getDownloadURL, ref as storageRef, deleteObject } fro
 import { db, storage } from './firebase-config';
 import { useAuth } from './AuthContext';
 import { useNavigate } from 'react-router-dom';
-
+//Test
 function AddAndDeletePage() {
   const [productName, setProductName] = useState('');
   const [productTag, setProductTag] = useState('');
