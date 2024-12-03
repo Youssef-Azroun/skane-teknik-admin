@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/skane-teknik-admin">
         <Routes>
           <Route path="/" element={<App />} />
           <Route 
