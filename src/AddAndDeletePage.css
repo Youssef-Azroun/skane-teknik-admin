@@ -65,7 +65,10 @@ h2 {
 }
 
 .file-input-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 1.2em;
   border: 2px dashed #74b9ff;
   border-radius: 16px;
@@ -75,6 +78,17 @@ h2 {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.upload-icon {
+  width: 24px;
+  height: 24px;
+  fill: #74b9ff;
+  transition: all 0.3s ease;
+}
+
+.file-input-label:hover .upload-icon {
+  transform: translateY(-2px);
 }
 
 .file-input-label:hover {
