@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import AddAndDeletePage from './AddAndDeletePage'
@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
-      <BrowserRouter basename="/skane-teknik-admin">
+      <HashRouter>
         <Routes>
           <Route path="/" element={<App />} />
           <Route 
@@ -27,7 +27,7 @@ createRoot(document.getElementById('root')).render(
             } 
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   </StrictMode>,
 )
