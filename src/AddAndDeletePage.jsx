@@ -304,6 +304,9 @@ function AddAndDeletePage() {
         <form className="product-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="image" className="file-input-label">
+              <svg className="upload-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 15h2V6h3l-4-4-4 4h3v9zm-5 4h12v-2H6v2zm0-4h3v-2H6v2zm12 0h3v-2h-3v2zm0-4h3V9h-3v2zm0-4h3V5h-3v2z"/>
+              </svg>
               Ladda upp produkt bild
               <input
                 type="file"
@@ -311,6 +314,7 @@ function AddAndDeletePage() {
                 accept="image/*"
                 onChange={handleImageChange}
                 className="file-input"
+                style={{ display: 'none' }}
                 required
               />
             </label>
